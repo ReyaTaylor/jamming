@@ -1,10 +1,10 @@
 import React from "react";
-import './SearchBar.css'
+
 
 function Searchbar() {
     return (
         <div className="jamming">
-            <input></input>
+            <input id="Search" placeholder="Search"></input>
             <button>Search</button>
         </div>
     );

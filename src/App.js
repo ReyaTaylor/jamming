@@ -1,17 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Searchbar from './SearchBar/SearchBar';
-import Playlist from './Playlist/Playlist';
-import Track from './Track/Track';
-
+import Searchbar from './Components/SearchBar';
+import Playlist from './Components/Playlist'
+import Track from './Components/Track';
+import Tracklist from './Components/Tracklist';
+import SearchResults from './Components/SearchResults';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Jamming</h1>
         <Searchbar />
         <Playlist />
-        <Track />
+        <section className='container'>
+        <Tracklist className='box'/>
+        <SearchResults className='box'/>
+        </section>
       </header>
     </div>
   );
